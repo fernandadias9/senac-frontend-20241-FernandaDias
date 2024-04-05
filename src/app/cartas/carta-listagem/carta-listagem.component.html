@@ -1,0 +1,20 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>Nome</tr>
+      <tr>Força</tr>
+      <tr>Valocidade</tr>
+      <tr>Inteligência</tr>
+      <tr>Criada em</tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let carta of cartas">
+        <td>{{carta.nome}}</td>
+        <td>{{carta.forca}}</td>
+        <td>{{carta.velocidade}}</td>
+        <td>{{carta.inteligencia}}</td>
+        <td>{{carta.dataCadastro | date: 'dd/MM/yyyy'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
